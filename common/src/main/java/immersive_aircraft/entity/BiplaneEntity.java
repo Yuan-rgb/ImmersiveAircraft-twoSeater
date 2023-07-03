@@ -42,7 +42,15 @@ public class BiplaneEntity extends AirplaneEntity {
         return 1.25f;
     }
 
-    final List<List<Vector3f>> PASSENGER_POSITIONS = List.of(List.of(new Vector3f(0.0f, 0.05f, -0.6f)));
+    final List<List<Vector3f>> PASSENGER_POSITIONS = List.of(
+            List.of(
+                    new Vector3f(0.0f, -0.1f, -0.2f)
+            ),
+            List.of(
+                    new Vector3f(0.0f, -0.1f, -0.2f),
+                    new Vector3f(0.0f, 0.4f, -1.4f)
+            )
+    );
 
     protected List<List<Vector3f>> getPassengerPositions() {
         return PASSENGER_POSITIONS;
